@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Contractor Application Form </title>
+<style>
+
+
+
+.label {
+    text-align: left;
+}
+
+.details {
+    text-align: right;
+}
+
+.sagayatik{
+    justify-content: flex-end;
+}
+
+#streetaddress{
+    justify-content: left;
+}
+.yanyana{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.tax-container {  
+    display: flex;  
+    align-items: center;
+}
+
+.tax-margin {
+  margin-right: 5px;
+}
+
+.if-you-have {
+  font-size: 12px;  
+  margin-right: 5px;
+}
+
+#marginleft{
+    padding-left:5%;
+}
+
+.flexend{
+    display:flex; 
+    justify-content: flex-end;
+}
+
+#hidden{
+    border:none;
+}
+
+h1{
+    text-align: center;
+}
+
+.yan{ 
+    display:flex; 
+    justify-content: space-between;
+}
+
+.alt{
+    display:block
+}
+
+#twoyears{
+    margin-left:30%; 
+    color:red;}
+
+.cerceve{
+
+margin-left: 20%;
+margin-right: 20%;
+
+
+}
+
+#forinput{
+    width:99.5%;
+}
+
+#addresses{
+    display: flex; 
+    width: 100%;
+}
+
+.address-container {
+    display: flex;     
+    align-items: center;
+        }
+
+.address-label {
+    flex: 0 0 auto;    
+    margin-right: 10px;
+        }
+
+.address-input {
+    flex: 1 1 auto;    
+    width: 100%;
+        }
+
+        .question-container {
+            display: flex;
+            align-items: center;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .question-container2 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .option-label {
+            margin-right: 5px;
+        }
+        .round-radio {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            display: inline-block;
+            position: relative;
+        }
+        .round-radio input {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        .round-radio .inner-radio {
+            width: 70%;
+            height: 70%;
+            background-color: #999;
+            border-radius: 50%;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            display: none;
+        }
+        .round-radio input:checked + .inner-radio {
+            display: block;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+</style>
+</head>
+<body>
+    
+<div class = "cerceve"> 
+    <h1>CONTRACTOR APPLICATION FORM</h1>
+
+
+<form method="get" action="">   
+
+<div class="yan">
+    <div>First name <input type="text" name="isim"></div>
+    <div class="alt">
+        <div>Nickname <input type="text" name="nickname"></div>
+        <div id="twoyears">using from past two years.</div>
+    </div>
+    <div>Last name <input  type="text" name="soyisim" size="30%"></div>
+</div>
+<br>
+
+<div class="yan">
+<div>Place of birth: <input  type="text" name="dyeri"></div>
+<div>Date of birth: <input id="hidden"  type="date" name="date"></div>
+
+<div class="tax-container">
+    <span class="tax-margin">TAX ID NO:</span>
+    <span class="if-you-have">if you have</span>
+    <input type="text" name="taxid" size="20%">
+  </div>
+</div>
+<br>
+
+<div class="yan">
+<div >Street address:</div>
+
+    <div class="yanyana">
+        <div>City</div>
+        <div style="margin-left: 20px;">Country</div>
+        <div style="margin-left: 20px;">Zip Code</div>
+    </div>
+</div>
+<input id="forinput" type="text">
+<br>
+<br>
+
+
+<div class="yan">
+    <div><span style="color:red">Birth</span>, State ID Card or Passport number  <input type="text" name="stateid"></div> 
+    <div>Phone number (+ <input type="text" name="phonenumber" size="10%"> ) <input type="text" name="phonenumber2" size="45%"></div>
+    
+</div>
+
+<br>
+
+<div class="yan">
+    <div><span style="color:red">Resident</span>, State ID Card or Passport number  <input type="text" name="stateid"></div> 
+    <div>E-mail address: <input type="text" name="email" size="45%"></div>  
+    
+</div>
+
+<br>
+<div>Places of residence from past two years</div>
+<br>
+
+<div class="address-container">
+    <label class="address-label" for="address">A. Adres:</label>
+    <input class="address-input" type="text" id="address" name="addressa">
+</div>
+<br>
+
+<div class="address-container">
+    <label class="address-label" for="address">B. Adres:</label>
+    <input class="address-input" type="text" id="address" name="addressb">
+</div>
+<br>
+
+<div class="address-container">
+    <label class="address-label" for="address">C. Adres:</label>
+    <input class="address-input" type="text" id="address" name="addressc">
+</div>
+<br>
+
+<div><span style="font-weight: bold;">Company name and job title,</span> <span style="color: red;"> from past two years:</span></div>
+<br>
+
+<div class="yan">
+    <div style="font-size:14px ;">Company name: <input type="text" name="companyname1"></div>
+    <div style="font-size:14px ;">Job title: <input type="text" name="jobtitle1"></div>
+    <div style="font-size:14px ;">Address: <input type="text" name="companyaddress1"></div>
+    <div style="font-size:14px ;">Phone (+ <input type="text" name="phonenumbercompany1" size="5%"> ) <input type="text" name="phonenumber2" ></div>
+</div>
+<br>
+
+<div class="yan">
+    <div style="font-size:14px ;">Company name: <input type="text" name="companyname2"></div>
+    <div style="font-size:14px ;">Job title: <input type="text" name="jobtitle2"></div>
+    <div style="font-size:14px ;">Address: <input type="text" name="companyaddress2"></div>
+    <div style="font-size:14px ;">Phone (+ <input type="text" name="phonenumbercompany2" size="5%"> ) <input type="text" name="phonenumber2" ></div>
+</div>
+<br>
+
+<div class="yan">
+    <div style="font-size:14px ;">Company name: <input type="text" name="companyname3"></div>
+    <div style="font-size:14px ;">Job title: <input type="text" name="jobtitle3"></div>
+    <div style="font-size:14px ;">Address: <input type="text" name="companyaddress3"></div>
+    <div style="font-size:14px ;">Phone (+ <input type="text" name="phonenumbercompany3" size="5%"> ) <input type="text" name="phonenumber2" ></div>
+</div>
+<br>
+
+
+<div class="question-container">
+    <p class="question-text">Have you ever been, or are you, a member of a military group or group that is subject to UN sanctions?</p>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio" name="answer1" value="yes">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">Yes</label>
+    </div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio" name="answer1" value="no">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">No</label>
+    </div>
+</div>
+
+<ul>
+    <li>
+        <div class="address-container">
+        <label class="address-label" for="address">If "YES", Explaining: </label>
+        <input class="address-input" type="text" id="address" name="Explaining1">
+        </div>  
+    </li>
+</ul>
+
+<br>
+
+    <div class="question-container">
+        <div class="question-text" style="font-weight: normal;">Have you ever been a member of the armed forces or a militant?</div>
+        <div class="option">
+            <label class="round-radio">
+                <input type="radio" name="answer2" value="yes">
+                <span class="inner-radio"></span>
+            </label>
+            <label class="option-label">Yes</label>
+        </div>
+        <div class="option">
+            <label class="round-radio">
+                <input type="radio" name="answer2" value="no">
+                <span class="inner-radio"></span>
+            </label>
+            <label class="option-label">No</label>
+        </div>
+    </div>
+<br>
+<ul>
+    <li>
+        <div class="address-container">
+        <label class="address-label" for="address">If "YES", Explaining: </label>
+        <input class="address-input" type="text" id="address" name="Explaining2">
+        </div>  
+    </li>
+</ul>
+
+<br>
+
+<div class="question-container">
+    <div class="question-text" style="font-weight: normal;">Have you ever been convicted?</div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio" name="answer3" value="yes">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">Yes</label>
+    </div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio" name="answer3" value="no">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">No</label>
+    </div>
+</div>
+<br>
+
+<ul>
+    <li>
+        <div class="address-container">
+        <label class="address-label" for="address">If "YES", Explaining: </label>
+        <input class="address-input" type="text" id="address" name="Explaining3">
+        </div>  
+    </li>
+</ul>
+
+<br>
+
+<div class="question-container">
+    <div class="question-text" style="font-weight: normal;">Have you ever been a criminal?</div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio" name="answer4" value="yes">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">Yes</label>
+    </div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio" name="answer4" value="no">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">No</label>
+    </div>
+</div>
+<br>
+<ul>
+    <li>
+        <div class="address-container">
+        <label class="address-label" for="address">If "YES", Explaining: </label>
+        <input class="address-input" type="text" id="address" name="Explaining4">
+        </div>  
+    </li>
+</ul>
+
+<br>
+
+<div class="question-container">
+    <div class="question-text" style="font-weight: normal;">Have you ever been convicted, imprisoned, or fined?:</div>
+    <div class="option">
+        <label class="round-radio">
+            <input  type="radio" name="answer5" value="yes">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">Yes</label>
+    </div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio"  name="answer5" value="no">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">No</label>
+    </div>
+</div>
+<br>
+<ul>
+    <li>
+        <div class="address-container">
+        <label class="address-label" for="address">If "YES", Explaining: </label>
+        <input class="address-input" type="text" id="address" name="Explaining5">
+        </div>  <br>
+        <input id="forinput" type="text">
+    </li>
+</ul>
+
+<div class="yan">
+    <div class="question-text" style="font-weight: normal;">Have you ever worked for "STL" Global?</div>
+
+    <div class="option">
+        <label class="round-radio">
+            <input  type="radio" name="answer6" value="yes">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">Yes</label>
+    </div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio"  name="answer6" value="no">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">No</label>
+    </div>
+
+    <div>How long? <input type="text" name="How long?"></div>
+</div>
+<br>
+<div class="question-container">
+    <div class="question-text" style="font-weight: normal;">Are you professionally familiar with the company's performance and products, or "STL" website?</div>
+    <div class="option">
+        <label class="round-radio">
+            <input  type="radio" name="answer7" value="yes">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">Yes</label>
+    </div>
+    <div class="option">
+        <label class="round-radio">
+            <input type="radio"  name="answer7" value="no">
+            <span class="inner-radio"></span>
+        </label>
+        <label class="option-label">No</label>
+    </div>
+</div>
+
+<br>
+
+<div class="address-container">
+    <label class="address-label">Do you plan to cooperation with "STL" for how long?</label>
+    <input class="address-input" type="text" id="address" name="Cooperation">
+</div>
+
+<br>
+
+<div class="address-container">
+    <label class="address-label">What is your goal fof working for "STL"?</label>
+    <input class="address-input" type="text" id="address" name="Workingforstl">
+</div>
+
+<br>
+<div class="center">
+    <div>APPLICANT SIGNATURE</div>
+    <div style="border: 2px black; border-style: dashed; padding-left: 100px; padding-right: 100px; padding-top: 25px; margin-left: 20px;"></div>
+</div>
+<button type="submit" value="mail gonder">Submit</button>
+</form>
+
+</div>  
+</body>
+</html>
+
+
